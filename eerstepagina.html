@@ -1,2 +1,40 @@
-<h1>eerste titel</h1>
-extra regel
+<script>
+	function mijnFunctie(){
+		//alert();
+		document.getElementById("eenid").innerHTML = "jojo";	
+		var eersteGetal = document.getElementById("eerstegetal").value;
+		var tweedeGetal = document.getElementById("tweedegetal").value;
+		//document.getElementById("eenid").innerHTML = getal;
+	}
+	function multiplier(){
+		alert("de uitkomst is:");
+		var eersteGetal = document.getElementById("eerstegetal").value;
+		var tweedeGetal = document.getElementById("tweedegetal").value;
+		var solution = eersteGetal * tweedeGetal;
+		
+	}
+
+
+</script>
+
+<style>
+	h1{
+		background-color:red;
+	}
+	h1#eenid{
+		background-color:blue;
+	}
+
+</style>
+
+
+<h1 align="center" style="background-color:orange"  >eerste titel</h1>
+<h1 onclick="mijnFunctie()">nog meer eerste titel</h1>
+<h1 id="eenid">nog meer eerste titel</h1>
+<h2>vermenigvuldig twee getallen</h2>
+<textarea type=text id=eerstegetal> </textarea>
+<textarea type=text id=tweedegetal> </textarea>
+<h2 onclick="multiplier()">klik hier om te vermenigvuldigen</h2>
+<textarea type=text id=solution> solution </textarea>
+
+

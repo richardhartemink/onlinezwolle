@@ -1,0 +1,16 @@
+<script>
+	function functieNaam(){
+		//alert("De uitkomst is:");
+		var waarde1Var = document.getElementById("waarde1").value;
+		var waarde2Var = document.getElementById("waarde2").value;
+		console.log("Waarde 1 is: " + waarde1Var);
+		console.log("Waarde 2 is: " + waarde2Var);
+		var uitkomstVar = parseInt(waarde1Var) + parseInt(waarde2Var);
+		document.getElementById("deUitkomst").innerHTML = uitkomstVar;
+		
+	}
+</script>
+<input id="waarde1" type=text>
+<input id="waarde2" type=text>
+<input type=button value="Klik hier" onclick=functieNaam()>
+<div id=deUitkomst> uitkomst </div>

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+            table, tr, td{
+                border: 4px solid rgb(209, 113, 88);
+                border-collapse:collapse;
+            }
+            
+                
+            
+        </style>
+        <script>
+            function mouseOver(vakjeNr){
+                var myElement = document.getElementById(vakjeNr);
+                if(myElement.style.backgroundColor=="red"){
+                }else{
+                    myElement.style.backgroundColor="green";
+                }
+                
+                //var myClass=document.getElementsByClassName("column1");
+                //myClass.style.backgroundColor="red";
+            }
+            function mouseOut(vakjeNr){
+                var myElement = document.getElementById(vakjeNr);
+                if(myElement.style.backgroundColor=="red"){
+                }else{
+                    myElement.style.backgroundColor="white";
+                }
+            }
+            function clicker(vakjeNr){
+                var myElement=document.getElementById(vakjeNr);
+                var myRow2=document.getElementById(vakjeNr+10);
+                var myRow3=document.getElementById(vakjeNr+20);
+                var myRow4=document.getElementById(vakjeNr+30);
+                var myRow5=document.getElementById(vakjeNr+40);
+                var myRow6=document.getElementById(vakjeNr+50);
+                if(myElement.style.backgroundColor=="green"){
+                    myElement.style.backgroundColor="red";                   
+                }else{
+                    alert("Noem is een leuk bericht");
+                }
+            }
+                
+            
+        </script>
+    </head>
+    <body>
+        <table border=1>
+            <tr height=100>
+                <td class="column1" id='11' width=100 onmouseover=mouseOver(11) onmouseout=mouseOut(11) onmousedown="clicker(11)"></td>
+                <td id='12' width=100 onmouseover=mouseOver(12) onmouseout=mouseOut(12) onmousedown="clicker(12)"></td>
+                <td id='13' width=100 onmouseover=mouseOver(13) onmouseout=mouseOut(13) onmousedown="clicker(13)"></td>
+                <td id='14' width=100 onmouseover=mouseOver(14) onmouseout=mouseOut(14) onmousedown="clicker(14)"></td>
+                <td id='15' width=100 onmouseover=mouseOver(15) onmouseout=mouseOut(15) onmousedown="clicker(15)"></td>
+                <td id='16' width=100 onmouseover=mouseOver(16) onmouseout=mouseOut(16) onmousedown="clicker(16)"></td>
+                <td id='17' width=100 onmouseover=mouseOver(17) onmouseout=mouseOut(17) onmousedown="clicker(17)"></td>
+            </tr>
+            <tr height=100>
+                <td class="column1" id='21' width=100 onmouseover=mouseOver(21) onmouseout=mouseOut(21) onmousedown="clicker(21)"></td>
+                <td id='22' onmouseover=mouseOver(22) onmouseout=mouseOut(22) onmousedown="clicker(22)"></td>
+                <td id='23' onmouseover=mouseOver(23) onmouseout=mouseOut(23) onmousedown="clicker(23)"></td>
+                <td id='24' onmouseover=mouseOver(24) onmouseout=mouseOut(24) onmousedown="clicker(24)"></td>
+                <td id='25' onmouseover=mouseOver(25) onmouseout=mouseOut(25) onmousedown="clicker(25)"></td>
+                <td id='26' onmouseover=mouseOver(26) onmouseout=mouseOut(26) onmousedown="clicker(26)"></td>
+                <td id='27' onmouseover=mouseOver(27) onmouseout=mouseOut(27) onmousedown="clicker(27)"></td>
+            </tr>
+            <tr height=100>
+                <td class="column1" id='31' width=100 onmouseover=mouseOver(31) onmouseout=mouseOut(31) onmousedown="clicker(31)"></td>
+                <td id='32' onmouseover=mouseOver(32) onmouseout=mouseOut(32) onmousedown="clicker(32)"></td>
+                <td id='33' onmouseover=mouseOver(33) onmouseout=mouseOut(33) onmousedown="clicker(33)"></td>
+                <td id='34' onmouseover=mouseOver(34) onmouseout=mouseOut(34) onmousedown="clicker(34)"></td>
+                <td id='35' onmouseover=mouseOver(35) onmouseout=mouseOut(35) onmousedown="clicker(35)"></td>
+                <td id='36' onmouseover=mouseOver(36) onmouseout=mouseOut(36) onmousedown="clicker(36)"></td>
+                <td id='37' onmouseover=mouseOver(37) onmouseout=mouseOut(37) onmousedown="clicker(37)"></td>
+            </tr>
+            <tr height=100>
+                <td class="column1" id='41' width=100 onmouseover=mouseOver(41) onmouseout=mouseOut(41) onmousedown="clicker(41)"></td>
+                <td id='42' onmouseover=mouseOver(42) onmouseout=mouseOut(42) onmousedown="clicker(42)"></td>
+                <td id='43' onmouseover=mouseOver(43) onmouseout=mouseOut(43) onmousedown="clicker(43)"></td>
+                <td id='44' onmouseover=mouseOver(44) onmouseout=mouseOut(44) onmousedown="clicker(44)"></td>
+                <td id='45' onmouseover=mouseOver(45) onmouseout=mouseOut(45) onmousedown="clicker(45)"></td>
+                <td id='46' onmouseover=mouseOver(46) onmouseout=mouseOut(46) onmousedown="clicker(46)"></td>
+                <td id='47' onmouseover=mouseOver(47) onmouseout=mouseOut(47) onmousedown="clicker(47)"></td>
+            </tr>
+              <tr height=100>
+                <td class="column1" id='51' width=100 onmouseover=mouseOver(51) onmouseout=mouseOut(51) onmousedown="clicker(51)"></td>
+                <td id='52' onmouseover=mouseOver(52) onmouseout=mouseOut(52) onmousedown="clicker(52)"></td>
+                <td id='53' onmouseover=mouseOver(53) onmouseout=mouseOut(53) onmousedown="clicker(53)"></td>
+                <td id='54' onmouseover=mouseOver(54) onmouseout=mouseOut(54) onmousedown="clicker(54)"></td>
+                <td id='55' onmouseover=mouseOver(55) onmouseout=mouseOut(55) onmousedown="clicker(55)"></td>
+                <td id='56' onmouseover=mouseOver(56) onmouseout=mouseOut(56) onmousedown="clicker(56)"></td>
+                <td id='57' onmouseover=mouseOver(57) onmouseout=mouseOut(57) onmousedown="clicker(57)"></td>
+            </tr>
+            <tr height=100>
+                <td class="column1" id='61' width=100 onmouseover=mouseOver(61) onmouseout=mouseOut(61) onmousedown="clicker(61)"></td>
+                <td id='62' onmouseover=mouseOver(62) onmouseout=mouseOut(62) onmousedown="clicker(62)"></td>
+                <td id='63' onmouseover=mouseOver(63) onmouseout=mouseOut(63) onmousedown="clicker(63)"></td>
+                <td id='64' onmouseover=mouseOver(64) onmouseout=mouseOut(64) onmousedown="clicker(64)"></td>
+                <td id='65' onmouseover=mouseOver(65) onmouseout=mouseOut(65) onmousedown="clicker(65)"></td>
+                <td id='66' onmouseover=mouseOver(66) onmouseout=mouseOut(66) onmousedown="clicker(66)"></td>
+                <td id='67' onmouseover=mouseOver(67) onmouseout=mouseOut(67) onmousedown="clicker(67)"></td>
+            </tr>
+            </table>
+    </body>
+</html>

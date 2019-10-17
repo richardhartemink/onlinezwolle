@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            td.water{
+                background-color: gray;
+            }
+            .boat{
+                background-color: gray;
+            }
+        </style>
+        <script>
+            var count = 0;
+            function schieten(bootofwater, vakje){
+                if(bootofwater=='water'){
+                    if(vakje.style.backgroundColor == 'blue'){
+                        alert("Je hebt hier al geschoten")
+                    }else{
+                    vakje.style.backgroundColor = 'blue';
+                    var raak = document.getElementById("commentaar").innerHTML = "Plons";
+                    }
+                }
+                else{
+                    if(vakje.style.backgroundColor == 'red'){
+                        alert("je hebt hier al geschoten");
+                    }else{
+                    vakje.style.backgroundColor = 'red';
+                    var raak = document.getElementById("commentaar").innerHTML = "Raak";
+                    
+                    if (count== 0){
+                        count++;
+                    }else{
+                        alert("Hij is gezonken");
+                    }
+                }
+                }
+            }
+        </script>
+    </head>
+    <body>    
+        <table border="1">
+            <tr>
+                <td class="water" onclick="schieten('water', this)">???</td>
+                <td class="boat" onclick="schieten('boat', this)">???</td>
+                <td class="boat" onclick="schieten('boat', this)">???</td>
+                <td class="water" onclick="schieten('water', this)">???</td>
+                <td class="boat" onclick="schieten('boat', this)">???</td>
+                <td class="boat" onclick="schieten('boat', this)">???</td>
+            </tr>
+        </table>
+        <div id=commentaar>
+
+        </div>
+    </body>
+</html>
